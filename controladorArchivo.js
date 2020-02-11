@@ -28,10 +28,18 @@ const datosPaises = () => {
                 datos.forEach(element => {
                     if (element.translations.es) {
                         const pais = element.translations.es;
-                        data += `{label:"${pais}",value:"${pais}"},`;
+                        data += `
+                        {
+                            label:"${pais}",
+                            value:"${pais}"
+                        },`;
                     } else {
                         const paisSinNombre = element.name;
-                        data += `{label:"${paisSinNombre}",value:"${paisSinNombre}"},`;
+                        data += `
+                        {
+                            label:"${paisSinNombre}",
+                            value:"${paisSinNombre}"
+                        },`;
                     }
                 });
                 resolve(data);
