@@ -1,0 +1,15 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "transformar api a js",
+  "main": "countries.js",
+  "scripts": {
+    "test": "node countries"
+  },
+  "author": "Francisco Figueroa",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "nodemon": "^2.0.2"
+  }
+}
